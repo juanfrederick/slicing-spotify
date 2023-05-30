@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;;
+}
+
+section.nav-atas{
+    position: sticky;
+    top: 0;
+}
+
+.atas{
+    margin-left: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.atas ul{
+    display: flex;
+    padding-left: 30px;
+}
+
+.atas ul li{
+    cursor: pointer;
+    list-style: none;
+    color: white;
+    background-color: #0000005b;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.atas section{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.atas section p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.akun{
+    display: flex;
+    background-color: #0000005b;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.emot{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 180px;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-top: 10px solid white;
+    cursor: pointer;
+}
+
+.exit-menu{
+    display: flex;
+    align-self: self-start;
+}
+
+.exit-menu div{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border: solid 0.5px rgba(255, 255, 255, 0.048);
+    cursor: pointer;
+}
+
+.samping{
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    min-height: 100vh;
+    padding-left: 15px;
+}
+
+.white-emot{
+    color: transparent;
+    text-shadow: 0 0 0 white;
+}
+
+.samping ul{
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.dot{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.samping ul li{
+    /* background-color: aqua; */
+    display: inline-block;
+    font-size: 1rem;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.samping ul li.text-li{
+    margin: 10px;
+}
+
+.line{
+    margin-right: 15px;
+    margin-top: 10px;
+    border-top: 0px solid white;
+}
+
+.samping-bawah{
+    margin-top: 20px;
+}
+
+.samping p{
+    margin-top: 15px;
+    font-size: 0.9rem;
+    margin-right: 15px;
+    color: rgba(255, 255, 255, 0.637);
+    cursor: default;
+}
+
+.samping p:hover{
+    color: white;
+}
+
+.bawah{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(39, 39, 39);
+    min-width: 100vw;
+    height: 80px;
+}
+
+.div-bawah{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bawah .song-name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    flex: 1 0 0px;
+}
+
+.song-picture{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-right: 10px;
+}
+
+
+.song-ul li{
+    list-style: none;
+    font-size: 0.8rem;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.822);
+    margin-top: 2px;
+}
+
+.song-ul li:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+.bawah .song-button{
+    margin: 10px;
+    flex: 1 2 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button{
+    display: flex;
+
+}
+
+.play-button li{
+    cursor: pointer;
+    list-style: none;
+    font-size: 30px;
+    margin: 0px 5px;
+}
+
+.time-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.panjang{
+    width: 35vw;
+    height: 3px;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+.time-button p {
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.song-setting{
+    /* background-color: aliceblue; */
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
+    flex: 1 1 0px;
+}
+
+.song-setting ul{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.song-setting ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.pendek{
+    width: 5vw;
+    height: 3px;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+/* Main */
+main{
+    margin-top: -50px;
+    margin-left: 250px;
+    padding: 85px 40px 100px 40px;
+    background: rgb(25,21,12);
+    background: linear-gradient(0deg, rgba(25,21,12,1) 0%, rgba(42,41,41,1) 71%, rgba(131,131,131,1) 100%);
+    min-height: 100vh;
+    color: white;
+}
+
+.album-container{
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.album{
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.623);
+    border-radius: 5px;
+}
+
+section.title-name{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+section.title-name p{
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+section.title-name p:hover{
+    text-decoration: underline;
+}
+
+section.title-name h1{
+    cursor: pointer;
+}
+
+section.title-name h1:hover{
+    text-decoration: underline;
+}
+
+section.song-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+section.song-container .song{
+    flex: 1;
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.623);
+}
+
+/* Nav bawah responsive */
+
+.time-buttonA{
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.panjangA{
+    width: 80vw;
+    height: 2px;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+.time-buttonA p {
+    display: inline-block;
+    font-size: 0.6rem;
+}
+
+.smallSizedDot{
+    display: none;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1150px) {
+    .hidden{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .album-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hidden-setting{
+        display: none;
+    }
+
+    .bawah .song-button{
+        align-items: flex-end;
+    }
+
+    .bawah{
+        height: 85px;
+    }
+
+    .time-buttonA{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .album-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hiddenA{
+        display: none;
+    }
+
+    main{
+        margin-left: 0;
+    }
+
+    .atas{
+        margin-left: 0;
+    }
+
+    .smallSizedDot{
+        display: block;
+    }
+}
